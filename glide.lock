@@ -1,5 +1,5 @@
-hash: cffb5c7da05e7317a13796494065d851e0c3c65ebc38565fc510512e2090cf10
-updated: 2017-06-23T20:14:34.619156242+09:00
+hash: 9742bf6d897be65f18bd3042da87d617e1af4841c3cdbe84439df0da6af58bc8
+updated: 2017-06-27T13:39:38.543609782+09:00
 imports:
 - name: github.com/eawsy/aws-lambda-go-core
   version: e26eed6aa244a3d45aa693816a9c5faf39390fcd
@@ -14,10 +14,6 @@ imports:
   subpackages:
   - service/lambda/runtime/net
   - service/lambda/runtime/net/apigatewayproxy
-- name: github.com/kr/pretty
-  version: cfb55aafdaf3ec08f0db22699ab822c50091b1c4
-- name: github.com/kr/text
-  version: 7cafcd837844e784b526369c9bce262804aebc60
 - name: github.com/nlopes/slack
   version: 72d15a0fc0b773a59c00f78b9e7d97eeb8c4281f
 - name: github.com/pressly/chi

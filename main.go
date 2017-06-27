@@ -6,7 +6,6 @@ import (
 	"encoding/json"
 	"github.com/eawsy/aws-lambda-go-net/service/lambda/runtime/net"
 	"github.com/eawsy/aws-lambda-go-net/service/lambda/runtime/net/apigatewayproxy"
-	"github.com/kr/pretty"
 	"github.com/nlopes/slack"
 	"github.com/pressly/chi"
 	"io/ioutil"
@@ -85,7 +84,6 @@ func handleAction(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusInternalServerError)
 		return
 	}
-	pretty.Log(payload, r.Header)
 
 	if payload.Team.Domain != os.Getenv("SLACK_TEAM") {
 		w.WriteHeader(http.StatusUnauthorized)
